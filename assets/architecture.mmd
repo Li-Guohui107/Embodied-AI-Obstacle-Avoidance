@@ -1,0 +1,11 @@
+flowchart TD
+ A[Grid World] --> B[Environment State]
+ B --> C[A* Planner]
+ C --> D[Grid Controller]
+ D --> E[Robot Step]
+ E --> F{Path Safe?}
+ F -- Yes --> G{Goal Reached?}
+ G -- No --> D
+ G -- Yes --> H[Task Complete]
+ F -- No --> I[Update Map / Replan]
+ I --> C

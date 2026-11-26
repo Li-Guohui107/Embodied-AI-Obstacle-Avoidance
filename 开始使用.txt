@@ -1,0 +1,6 @@
+1. 安装 Python 3.10+
+2. 在项目目录运行：pip install -r requirements.txt
+3. 运行：python -m pip install -e .
+4. 运行：python -m embodied_nav.main
+5. 三维演示：python -m embodied_nav.main --view 3d
+6. 阅读 README.md 和 docs/ 中的中文教程。
